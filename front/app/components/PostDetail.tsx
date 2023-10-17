@@ -25,8 +25,10 @@ const PostDetail: React.FC<PostDetailProps> = ({ category, postId }) => {
     async function fetchData() {
       return await getPostById({ category, id: postId });
     }
-    isLoading(false);
-    fetchData().then((data) => setPost(data));
+    fetchData().then((data) => {
+      setPost(data);
+      isLoading(false);
+    });
   }, []);
 
   return (
@@ -91,7 +93,7 @@ const PostDetail: React.FC<PostDetailProps> = ({ category, postId }) => {
             </div>
           </>
         ) : (
-          <EmptyComponent text="El post no existe" />
+          <EmptyComponent text="El post no existe." />
         )
       ) : (
         <SkeletonDetail />
