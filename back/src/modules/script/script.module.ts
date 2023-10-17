@@ -3,7 +3,7 @@ import { ScriptController } from './script.controller';
 import { ScriptService } from './script.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { People } from 'src/entities/people.entity';
-import { Film } from 'src/entities/film.entity';
+import { Film } from '../../entities/film.entity';
 import { Planet } from 'src/entities/planet.entity';
 import { Starship } from 'src/entities/starship.entity';
 import { ScriptMiddleware } from './script.middleware';

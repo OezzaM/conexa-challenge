@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { People } from 'src/entities/people.entity';
-import { Film } from 'src/entities/film.entity';
+import { Film } from '../../entities/film.entity';
 import { Planet } from 'src/entities/planet.entity';
 import { Starship } from 'src/entities/starship.entity';
 

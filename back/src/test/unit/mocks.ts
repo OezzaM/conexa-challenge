@@ -11,7 +11,7 @@ import { StarshipService } from 'src/modules/starship/starship.service';
 import { Pagination } from 'src/common/pagination/pagination';
 
 /* Entities */
-import { Film } from 'src/entities/film.entity';
+import { Film } from '../../entities/film.entity';
 import { People } from 'src/entities/people.entity';
 import { Planet } from 'src/entities/planet.entity';
 import { Starship } from 'src/entities/starship.entity';

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ILike, IsNull, Not, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Film } from 'src/entities/film.entity';
+import { Film } from '../../entities/film.entity';
 import { Pagination } from 'src/common/pagination/pagination';
 import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
 
