@@ -6,7 +6,7 @@ Este repositorio contiene dos proyectos: un frontend construido con NextJS y un 
 Este proyecto de frontend es una aplicación moderna construida utilizando NextJS, TailwindCSS.
 #### Caracteristicas
 
-- NextJS
+- Next.JS
 - TailwindCSS
 - React-icons
 - Redux
@@ -29,4 +29,4 @@ La API es una aplicación backend hecha en NestJS que complementa la interfaz de
 
 #### Despliegue
 
-La aplicación de NestJS está desplegada en Vercel. [[LIVE DEMO](https://conexa-challenge-7i4n.vercel.app/)]
+La aplicación de NestJS está desplegada en Vercel. [LIVE DEMO](https://conexa-challenge-black.vercel.app/api/)
