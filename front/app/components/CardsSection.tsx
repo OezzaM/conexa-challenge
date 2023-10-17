@@ -10,6 +10,7 @@ import SkeletonCard from "./SkeletonCard";
 import { CategoryEnum } from "../common/enums";
 import { Post } from "../common/interfaces";
 import Search from "./Search";
+import EmptyComponent from "./EmptyComponent";
 
 interface CardsSectionProps {
   searchParams: { category: CategoryEnum; page: number; search?: string };
@@ -45,7 +46,7 @@ const CardsSection: React.FC<CardsSectionProps> = ({
             />
           </>
         ) : (
-          <div>NO HAY DATA</div>
+          <EmptyComponent category={category} />
         )
       ) : (
         <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8 mb-10 select-none">

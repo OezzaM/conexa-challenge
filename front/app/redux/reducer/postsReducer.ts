@@ -20,7 +20,6 @@ export const postsSlice = createSlice({
   name: "posts",
   initialState,
   reducers: {
-    // TO DO CAMBIAR ANYS
     addPagination: (state, action: PayloadAction<any>) => {
       const { posts, category } = action.payload;
       state.pagination[category as CategoryEnum] = posts.pagination.total;

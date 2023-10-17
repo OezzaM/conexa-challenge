@@ -1,7 +1,5 @@
-import querystring from "querystring";
 import { mockUseFetchState } from "./storeMocks";
 
-// Define a custom route for your test
 export const mockRouter = {
   push: jest.fn(),
 };

@@ -14,7 +14,7 @@ const Home = ({
   searchParams: { category = CategoryEnum.films, page = 1, search = undefined },
 }: HomeProps) => {
   return (
-    <div /* className="min-h-screen" */ data-testid="home-page">
+    <div data-testid="home-page">
       <Container>
         <CardsSection searchParams={{ category, page, search }} />
       </Container>
