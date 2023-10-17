@@ -6,33 +6,33 @@ export class People {
   id: number;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   name: string;
 
   @Column('char', { name: 'url', length: 80, nullable: true })
   url: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   height: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   mass: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   hair_color: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   skin_color: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   eye_color: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   gender: string;
 }

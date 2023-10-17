@@ -6,37 +6,37 @@ export class Planet {
   id: number;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   name: string;
 
   @Column('char', { name: 'url', length: 80, nullable: true })
   url: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   rotation_period: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   orbital_period: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   diameter: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   climate: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   gravity: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   terrain: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   population: string;
 }

@@ -6,7 +6,7 @@ export class User {
   id: number;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   name: string;
 
   @Column({ unique: true })

@@ -6,7 +6,7 @@ export class Film {
   id: number;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   name: string;
 
   @Column()
@@ -19,10 +19,10 @@ export class Film {
   opening_crawl: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   director: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   producer: string;
 }

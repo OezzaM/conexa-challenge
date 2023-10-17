@@ -6,33 +6,33 @@ export class Starship {
   id: number;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   name: string;
 
   @Column('char', { name: 'url', length: 80, nullable: true })
   url: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   model: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   manufacturer: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   crew: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   passengers: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   consumables: string;
 
   @Column()
-  @Index({ fulltext: true })
+  @Index()
   starship_class: string;
 }
