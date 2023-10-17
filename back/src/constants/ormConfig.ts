@@ -8,7 +8,7 @@ export const ORM_CONFIG: TypeOrmModuleOptions = {
   username: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE_NAME,
-  entities: ['dist/entities/**/*{.ts,.js}'],
+  entities: [__dirname + '/../**/*.entity.{js,ts}'],
   charset: 'utf8mb4_unicode_ci',
   synchronize: true,
   extra: {
