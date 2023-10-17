@@ -6,10 +6,10 @@ Descripción
 Este proyecto de frontend es una aplicación moderna construida utilizando NextJS, TailwindCSS.
 #### Caracteristicas
 
--NextJS
--TailwindCSS
--React-icons
--Redux
+- NextJS
+- TailwindCSS
+- React-icons
+- Redux
 
 #### Despliegue
 
@@ -21,11 +21,11 @@ La API es una aplicación backend hecha en NestJS que complementa la interfaz de
 
 #### Caracteristicas
 
--NestJS
--Swagger UI
--BackBlaze para el almacenamiento de imagenes
--MySQL como principal DB
--Passport para autenticación en diferentes endpoints de migración de datos
+- NestJS
+- Swagger UI
+- BackBlaze para el almacenamiento de imagenes
+- MySQL como principal DB
+- Passport para autenticación en diferentes endpoints de migración de datos
 
 #### Despliegue
 
