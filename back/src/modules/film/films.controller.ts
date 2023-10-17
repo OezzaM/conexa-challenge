@@ -2,7 +2,7 @@ import { Controller, Get, Req, Query, Param } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { FilmsService } from './films.service';
 import { Film } from '../../entities/film.entity';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
 
 @Controller('films')
 @ApiTags('Films')

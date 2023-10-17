@@ -4,7 +4,7 @@ import { FilmsController } from './films.controller';
 import { FilmsService } from './films.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { HttpModule } from '@nestjs/axios';
-import { Pagination } from 'src/common/pagination/pagination';
+import { Pagination } from '../../common/pagination/pagination';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Film]), HttpModule],

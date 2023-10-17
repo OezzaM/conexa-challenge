@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { PlanetsController } from './planets.controller';
 import { PlanetsService } from './planets.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Planet } from 'src/entities/planet.entity';
-import { Pagination } from 'src/common/pagination/pagination';
+import { Planet } from '../../entities/planet.entity';
+import { Pagination } from '../../common/pagination/pagination';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Planet])],

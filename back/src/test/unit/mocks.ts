@@ -4,17 +4,17 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
 /* Services */
-import { FilmsService } from 'src/modules/film/films.service';
-import { PeopleService } from 'src/modules/people/people.service';
-import { PlanetsService } from 'src/modules/planet/planets.service';
-import { StarshipService } from 'src/modules/starship/starship.service';
-import { Pagination } from 'src/common/pagination/pagination';
+import { FilmsService } from '../../modules/film/films.service';
+import { PeopleService } from '../../modules/people/people.service';
+import { PlanetsService } from '../../modules/planet/planets.service';
+import { StarshipService } from '../../modules/starship/starship.service';
+import { Pagination } from '../../common/pagination/pagination';
 
 /* Entities */
 import { Film } from '../../entities/film.entity';
-import { People } from 'src/entities/people.entity';
-import { Planet } from 'src/entities/planet.entity';
-import { Starship } from 'src/entities/starship.entity';
+import { People } from '../../entities/people.entity';
+import { Planet } from '../../entities/planet.entity';
+import { Starship } from '../../entities/starship.entity';
 
 export type MockType<T> = {
   [P in keyof T]?: jest.Mock<any>;

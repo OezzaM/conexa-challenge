@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { ILike, Repository, Not, IsNull } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Planet } from 'src/entities/planet.entity';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
-import { Pagination } from 'src/common/pagination/pagination';
+import { Planet } from '../../entities/planet.entity';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
+import { Pagination } from '../../common/pagination/pagination';
 
 @Injectable()
 export class PlanetsService {

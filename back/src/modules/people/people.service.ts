@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { ILike, Repository, Not, IsNull } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { People } from 'src/entities/people.entity';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
-import { Pagination } from 'src/common/pagination/pagination';
+import { People } from '../../entities/people.entity';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
+import { Pagination } from '../../common/pagination/pagination';
 
 @Injectable()
 export class PeopleService {

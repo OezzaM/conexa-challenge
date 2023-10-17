@@ -1,8 +1,8 @@
 import { Controller, Get, Query, Req, Param } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { PeopleService } from './people.service';
-import { People } from 'src/entities/people.entity';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
+import { People } from '../../entities/people.entity';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
 
 @Controller('peoples')
 @ApiTags('Peoples')

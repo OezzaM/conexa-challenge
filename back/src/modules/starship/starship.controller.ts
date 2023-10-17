@@ -1,8 +1,8 @@
 import { Controller, Get, Query, Req, Param } from '@nestjs/common';
 import { ApiOperation, ApiTags, ApiQuery } from '@nestjs/swagger';
 import { StarshipService } from './starship.service';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
-import { Starship } from 'src/entities/starship.entity';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
+import { Starship } from '../../entities/starship.entity';
 
 @Controller('starships')
 @ApiTags('Starships')

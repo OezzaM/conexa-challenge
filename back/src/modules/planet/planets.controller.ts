@@ -1,8 +1,8 @@
 import { Controller, Get, Query, Req, Param } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { PlanetsService } from './planets.service';
-import { PaginatedListDto } from 'src/common/pagination/DTOs/paginated-list.dto';
-import { Planet } from 'src/entities/planet.entity';
+import { PaginatedListDto } from '../../common/pagination/DTOs/paginated-list.dto';
+import { Planet } from '../../entities/planet.entity';
 
 @Controller('planets')
 @ApiTags('Planets')
