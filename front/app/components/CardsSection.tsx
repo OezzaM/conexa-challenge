@@ -11,6 +11,7 @@ import { CategoryEnum } from "../common/enums";
 import { Post } from "../common/interfaces";
 import Search from "./Search";
 import EmptyComponent from "./EmptyComponent";
+import { categories } from "../common/constants";
 
 interface CardsSectionProps {
   searchParams: { category: CategoryEnum; page: number; search?: string };
@@ -22,6 +23,10 @@ const CardsSection: React.FC<CardsSectionProps> = ({
   const { posts, pagination, isLoading } = useSelector(
     (state: RootState) => state.postsReducer
   );
+
+  const categoryName = categories.find(
+    (categoryItem) => categoryItem.key === category
+  )?.name;
 
   const { fetchPosts } = useFetch();
 
@@ -46,7 +51,9 @@ const CardsSection: React.FC<CardsSectionProps> = ({
             />
           </>
         ) : (
-          <EmptyComponent category={category} />
+          <EmptyComponent
+            text={`No hay ${categoryName} disponibles para esta búsqueda`}
+          />
         )
       ) : (
         <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8 mb-10 select-none">
